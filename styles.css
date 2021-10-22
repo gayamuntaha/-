@@ -1,4 +1,18 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Saira Extra Condensed";
+  src: url("fonts/SairaCondensed.ttf") format("ttf");
+ }
+ @font-face {
+  font-family: 'Amiri', serif;
+  src:  url("fonts/AmiriBold.ttf") format("ttf"),
+        url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap');
+ }
+ @font-face {
+  font-family: 'Areef', serif;
+  src:  url("fonts/ArefRuqaa.ttf") format("ttf"),
+        url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
+ }
 /*!
 * Start Bootstrap - Resume v7.0.3 (https://startbootstrap.com/theme/resume)
 * Copyright 2013-2021 Start Bootstrap
@@ -68,23 +82,9 @@
 *::after {
   box-sizing: border-box;
 }
-@font-face {
-  font-family: "Saira Extra Condensed";
-  src: url("fonts/SairaCondensed.ttf") format("ttf");
- }
- @font-face {
-  font-family: 'Amiri', serif;;
-  src:  url("fonts/AmiriBold.ttf") format("ttf")
-        url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap');
- }
- @font-face {
-  font-family: 'Areef', serif;;
-  src:  url("fonts/ArefRuqaa.ttf") format("ttf")
-        url('href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
- }
+
  .arabico {
    font-family: 'Areef';
-   font-weight: bold;
  }
 .arabica {
   font-family: 'Amiri';
