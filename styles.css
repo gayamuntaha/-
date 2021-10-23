@@ -81,15 +81,19 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  
 }
 
- .arabico {
-   font-family: 'Areef';
- }
 .arabica {
   font-family: 'Amiri';
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: calc(0.80rem + 0.80vw)
+}
+.arabicaTitle {
+  font-family: 'Amiri';
+  font-weight: bold;
+  font-size: calc(1.5rem + 1.5vw);
+ 
 }
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -123,6 +127,7 @@ hr:not([size]) {
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  color: #ffc107;
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family:"Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -136,15 +141,17 @@ h1, .h1 {
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 6rem;
+    font-size: 7rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.475rem + 2.7vw);
+  font-size: calc(3rem + 2.7vw);
+  color: #ffc107;
 }
 @media (min-width: 1200px) {
   h2, .h2 {
+    color: #ffc107;
     font-size: 3.5rem;
   }
 }
@@ -154,7 +161,7 @@ h3, .h3 {
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -178,6 +185,7 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 2.5rem;
 }
 
 abbr[title],
@@ -197,7 +205,7 @@ address {
 
 ol,
 ul {
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 
 ol,
@@ -262,7 +270,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #974a2d;
+  color: var(--bs-warning);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -11409,7 +11417,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #00aeef;
+  background-color: var(--bs-warning);
 }
 
 .dev-icons {
